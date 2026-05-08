@@ -89,9 +89,52 @@ nav {
   color: #2A9D8F;
 }
 
+
+.about-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.column.text {
+  flex: 0 0 60%;
+}
+
+.column.image {
+  flex: 0 0 30%;
+}
+
+
+.column img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+
+
+@media (max-width: 768px) {
+  .about-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .column img {
+    max-width: 200px;
+  }
+}
 /* ---------------------------
    Hero Section
    --------------------------- */
+
+
+
 .hero {
   text-align: center;
   padding: 5rem 2rem;
